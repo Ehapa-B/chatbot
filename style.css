@@ -14,6 +14,7 @@ body {
     align-items: center;
     height: 100vh;
     margin-right: 20px;
+    border-radius: 16px;
 }
 
 .chat-interface {
@@ -111,7 +112,7 @@ body {
 
 #active-user {
     position: relative;
-    right: 253px;
+    right: 262px;
     bottom: -8px;
     width: 10px;
     height: 10px;
@@ -125,5 +126,17 @@ body {
 
     .chat-interface {
         width: 100%;
+    }
+
+    #active-user {
+        position: relative;
+        bottom: -8px;
+        margin-left: 50px;
+    }
+
+    .blue-arrow {
+        display: flex;
+        justify-content: flex-end;
+        margin-top: -60px;
     }
 }

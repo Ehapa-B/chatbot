@@ -1,24 +1,18 @@
-// im.js
-
 document.addEventListener("DOMContentLoaded", function () {
     const userInput = document.getElementById("user-input");
     const chatContainer = document.querySelector(".top-content");
-    let botResponseIndex = 0; // Keep track of the index for the next bot response
+    let botResponseIndex = 0;
 
     userInput.addEventListener("keydown", function (event) {
         if (event.key === "Enter") {
             const userMessage = userInput.value;
 
-            // Display user message
             displayMessage("user", userMessage);
 
-            // Simulate bot response
             const botMessage = getBotResponse(userMessage);
 
-            // Display bot message
             displayMessage("bot", botMessage);
 
-            // Clear user input
             userInput.value = "";
         }
     });
@@ -33,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
         messageContainer.appendChild(messageText);
         chatContainer.appendChild(messageContainer);
 
-        // Scroll to the bottom to show the latest message
+
         chatContainer.scrollTop = chatContainer.scrollHeight;
     }
 
