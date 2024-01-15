@@ -1,0 +1,129 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+ 
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.first-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 100vh;
+    margin-right: 20px;
+}
+
+.chat-interface {
+    border: 1px solid #ccc;
+    width: 400px;
+    height: 400px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    padding: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #3047EC;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+
+.top-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+.input-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid  rgba(235, 235, 235, 1);
+    padding: 10px;
+    margin-top: 150px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#user-input {
+    flex: 1;
+    padding: 5px;
+    margin-right: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-area .input-wrapper .footer-images{
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.blue-arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: -80px;
+}
+#toggle-image {
+    cursor: pointer;
+}
+
+.message-container {
+    padding: 8px;
+    margin: 5px;
+    max-width: 70%;
+}
+
+.user {
+    align-self: flex-end;
+    background: rgba(48, 71, 236, 1);
+    color: rgba(255, 255, 255, 1);
+    margin-left: 90px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+.bot {
+    align-self: flex-start;
+    background: rgba(242, 242, 242, 1);
+    color: rgba(0, 0, 0, 1);
+    margin-left: 0;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+
+#logo {
+    margin-left: 1px;
+    margin-right: 100px;
+}
+
+#active-user {
+    position: relative;
+    right: 253px;
+    bottom: -8px;
+    width: 10px;
+    height: 10px;
+}
+
+/* Responsive styles */
+@media (max-width: 600px) {
+    .first-container {
+        width: 100%;
+    }
+
+    .chat-interface {
+        width: 100%;
+    }
+}
